@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.julianthome'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.0.2")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.0.2")
+    compile "org.slf4j:slf4j-simple:1.7.25"
+    compile "org.slf4j:slf4j-api:1.7.25"
+    compile 'com.ibm.wala:com.ibm.wala.cast.js:1.5.0'
+    compile 'com.ibm.wala:com.ibm.wala.core:1.5.0'
+    compile 'com.ibm.wala:com.ibm.wala.cast:1.5.0'
+    compile 'com.ibm.wala:com.ibm.wala.cast.js.rhino:1.5.0'
+}
