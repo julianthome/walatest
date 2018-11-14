@@ -1,9 +1,7 @@
-function test()
-{
-    var x = 101;
-    if (x > 2)
-        x = x + 1;
-    console.log(x);
+function foo() {
+    var k = "s";
+    var v = "tttt";
+    if(k.indexOf("t") > 2)
+        v = 2;
 }
-
-test();
+foo();
